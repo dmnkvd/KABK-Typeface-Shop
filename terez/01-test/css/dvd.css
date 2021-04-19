@@ -34,3 +34,23 @@ img:not(:hover) {
   display: flex;
   flex-direction: column;
 }
+
+/* block grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+
+.grid > div {
+  background: black;
+  padding: 1rem;
+}
+
+.grid > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
