@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* Copyright © 2008-now Harris Blondman, visual, communication, and studio. All rights reserved. www.harrisblondman.nl
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
 body {
   width: 100vw;
   height: 100vh;
@@ -12,7 +15,7 @@ body {
   position: fixed;
   width: calc(100% - 4em);
   height: calc(100% - 4em);
-  border: 18px solid #4b01f7;
+  border: 18px solid rgb(75, 1, 247);
   filter: blur(28px);
 }
 
@@ -20,11 +23,12 @@ img {
   max-width: 100%;
   width: auto;
   margin: 1em;
-  transition: 0.5s filter ease-in-out;
-}
 
-img:not(:hover) {
-  filter: blur(10px);
+  transition: 0.5s filter ease-in-out;
+
+  &:not(:hover) {
+    filter: blur(10px);
+  }
 }
 
 .img-container {
