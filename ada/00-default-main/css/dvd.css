@@ -1,1 +1,7 @@
 @charset "UTF-8";
+
+.text {
+  color: red;
+  font-size: 4em;
+  margin-left: 100px;
+}
